@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suggest</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src=index.js></script>
+</head>
+<body>
+
+<section class="field">
+    <label for="airport"></label>
+    <input type="text" id="airport" placeholder="city or airport" list="airports">
+    <datalist id="airports">
+    </datalist>
+</section>
+<script>
+    document.getElementById('airport').addEventListener("input", debouncedInputChange);
+</script>
+
+</body>
+</html>
